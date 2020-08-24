@@ -36,21 +36,22 @@
 <body>
     <ul class="list">
         <li>
-            <a href="./images/1.png.jpg"><img src="./images/1.png.jpg" alt=""></a>
+            <a href="./images/1.png.jpg" title="美女1"><img src="./images/1.png.jpg" alt=""></a>
         </li>
         <li>
-            <a href="./images/2.png.jpg"><img src="./images/2.png.jpg" alt=""></a>
+            <a href="./images/2.png.jpg" title="美女2"><img src="./images/2.png.jpg" alt=""></a>
         </li>
         <li>
-            <a href="./images/3.png.jpg"><img src="./images/3.png.jpg" alt=""></a>
+            <a href="./images/3.png.jpg" title="美女3"><img src="./images/3.png.jpg" alt=""></a>
         </li>
         <li>
-            <a href="./images/4.png.jpg"><img src="./images/4.png.jpg" alt=""></a>
+            <a href="./images/4.png.jpg" title="美女4"><img src="./images/4.png.jpg" alt=""></a>
         </li>
         <li>
-            <a href="./images/5.png.jpg"><img src="./images/5.png.jpg" alt=""></a>
+            <a href="./images/5.png.jpg" title="美女5"><img src="./images/5.png.jpg" alt=""></a>
         </li>
     </ul>
+    <p>美女1</p>
     <div class="box">
         <img src="./images/1.png.jpg" alt="">
     </div>
@@ -59,6 +60,7 @@
     <script>
         $('.list a').click(function(){
             $('.box>img').attr('src',$(this).attr('href'));
+            $('p').text($(this).attr('title'));
             return false;
         })
     </script>
